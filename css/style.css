@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  position: fixed;
+  background-color: white;
+  padding: 105px 1em 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+  height: 25px;
+  margin-top: -90px;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container .left-nav a + a {
+  margin-left: 10px;
+}
+
+.hero {
+  background-color: #F2F2F2;
+  padding: 1.2em;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero a {
+  padding: 0;
+  margin: 0;
+}
+
+.hero .hero-left h3 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.hero .hero-left h1 {
+  font-size: 30px;
+}
+
+.hero .hero-left h2 {
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.hero .hero-left .hero-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  width: 10em;
+  height: 2.7em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.hero .hero-left .hero-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero .hero-right h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3em;
+  margin-bottom: .8em;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 5px;
+  width: 8em;
+  height: 2em;
+}
+
+.hero .hero-right h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.hero .hero-right .hero-left-center {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-right .hero-left-center .shoe-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.hero .hero-right .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .hero-right .slider div + div {
+  margin-left: .5em;
+}
+
+.hero .hero-right .slider .slider-sides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: .4em;
+  width: 5em;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.hero .hero-right .slider .slider-current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #B9A16B;
+  height: .6em;
+  width: 6em;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

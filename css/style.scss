@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    padding: 105px 1em 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+    height: 25px;
+    margin-top: -90px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: space-between;
+        
+        .left-nav {
+            display: flex;
+            align-items: center;
+            
+            a + a {
+                margin-left: 10px;
+            }
+            
+        }
+    }
+    
+}
+
+.hero {
+    background-color: #F2F2F2;
+    padding: 1.2em;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    margin: 0 auto;
+
+    a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-left {
+        h3 {
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 25px;
+        }
+
+        .hero-button {
+            display: flex;
+            background-color: black;
+            width: 10em;
+            height: 2.7em;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border-radius: 8px;
+            
+            
+            a {
+                text-decoration: none;
+                color: white;
+                
+            }
+        }
+        
+    }
+
+    .hero-right {
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 3em;
+            margin-bottom: .8em;
+            font-weight: normal;
+            font-size: 16px;
+            background-color: white;
+            border-radius: 5px;
+            width: 8em;
+            height: 2em;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+
+        .hero-left-center {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // flex-direction: column;
+
+            .shoe-images {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+
+        .slider {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div + div {
+                margin-left: .5em;
+            }
+
+            .slider-sides {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                height: .4em;
+                width: 5em;
+                border: 2px solid rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+            }
+            .slider-current {
+                display: flex;
+                align-items: center;
+                background-color: #B9A16B;
+                height: .6em;
+                width: 6em;
+                border-radius: 5px;
+            }
+        }
+    }
+}
