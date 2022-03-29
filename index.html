@@ -15,22 +15,20 @@
 <body>
     <header id="header" class="navbar">
         <div class="container">
-            <a href="#" class="mobile-nav"><img src="images/bars.svg" alt="Toggle Navigation"></a>
-            <a href="#"><img src="images/logo.svg" alt="Website Logo"></a>
-            <nav>
+            <a class="mobile-nav" id="mobile-open-close" onclick="mobileMenuClicked()"><i class="fa-solid fa-bars"></i></a>
+            <a href="index.html" class="logos"><img src="images/logo.svg" alt="Logo"></a>
+            <nav id="main-nav">
                 <ul class="primary-nav">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Popular</li>
-                    <li>Contact</li>
-                </ul>
-
-                <ul class="secondary-nav">
-                    <li>Login</li>
-                   
+                    <li><a style="color: red" href="#open-hero">Home</a></li>
+                    <li><a href="#open-shop">Shop</a></li>
+                    <li><a href="#open-category">Categories</a></li>
+                    <li><a href="#open-popular">Popular</a></li>
+                    <li><a href="#open-contact">Contact</a></li>
+                    <li class="last-child"><a href="#">Login</a></li>
                 </ul>
             </nav>
             <div class="left-nav">
+                <a href="#" class="login" id="log">Login</a>
                 <a href="#">
                     <img src="images/search.svg" alt="Search Icon">
 
@@ -42,18 +40,22 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section id="open-hero" class="hero">
         <div class="container">
             <div class="hero-left">
-                <h3>
-                    Affordability
-                </h3>
-                <h1>
-                    BEST ON SALE
-                </h1>
-                <h2>
-                    Get That Look
-                </h2>
+
+                <div>
+                    <h3>
+                        Affordability
+                    </h3>
+                    <h1>
+                        BEST ON SALE
+                    </h1>
+                    <h2>
+                        Get That Look
+                    </h2>
+                </div>
+                
                 <div class="hero-button">
                     <a href="#">Go Shopping</a>
                 </div>
@@ -67,23 +69,23 @@
                 </h2>
 
                 <div class="hero-left-center">
-                    <a href="#"><img src="images/less-than.svg" alt="Go Left Corousel" class="greater-less-than"></a>
-                    <img src="images/shoeslide4.svg" class="shoe-images" alt="Shoe Image 4">
-                    <a href="#"><img src="images/greater-than.svg" alt="" class="greate-less-than"></a>
+                    <a href="#" onclick="countingLeft()"><img src="images/less-than.svg" alt="Go Left Corousel" class="greater-less-than"></a>
+                    <a class="img-item" id="current-img"><img src="images/shoeslide4.svg" class="shoe-images" alt="Shoe Image 4"></a>
+                    <a href="#" onclick="counting()"><img src="images/greater-than.svg" alt="" class="greate-less-than"></a>
                 </div>
                 <div class="slider">
-                    <div class="slider-sides">
+                    <div class="slider-sides" id="0">
                     </div>
-                    <div class="slider-current">
+                    <div class="slider-sides slider-current" id="1">
                     </div>
-                    <div class="slider-sides">
+                    <div class="slider-sides" id="2">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="categories">
+    <section id="open-category" class="categories">
         <h1>Categories</h1>
         <div class="container">
             <div class="category">
@@ -97,8 +99,7 @@
                     <a href="#">Shop <img src="images/arrow-left.svg" alt="Arrow Left Shopping"></a>
                 </div>
             </div>
-        </div>
-        <div class="container">
+        
             <div class="category">
                 <div class="category-image">
                     <img src="images/women-shoe.jpg" alt="A Picture of Mens Shoes">
@@ -110,8 +111,7 @@
                     <a href="#">Shop <img src="images/arrow-left.svg" alt="Arrow Left Shopping"></a>
                 </div>
             </div>
-        </div>
-        <div class="container">
+    
             <div class="category">
                 <div class="category-image">
                     <img src="images/children-shoe.jpg" alt="A Picture of Mens Shoes">
@@ -126,6 +126,252 @@
         </div>
     </section>
 
+    <section id="open-popular" class="products">
+        <h1>Popular</h1>
+        <div class="container">
+            <div class="product">
+                <div class="images">
+                    <div class="user-interaction">
+                        <img src="images/Love.svg" alt="Add to Favorites">
+                        <img src="images/add-cart.svg" alt="Add Product to Cart">
+                    </div>
+                    <div class="product-image">
+                        <img src="images/product.jpg" alt="Product Picture">
+                    </div>
+                    
+                </div>
+
+                <div class="product-description">
+                    <h3>
+                        Guatama-zp
+                    </h3>
+                    <p>
+                        Ksh20.00
+                    </p>
+                </div>
+                
+            </div>
+            <div class="product">
+                <div class="images">
+                    <div class="user-interaction">
+                        <img src="images/Love.svg" alt="Add to Favorites">
+                        <img src="images/add-cart.svg" alt="Add Product to Cart">
+                    </div>
+                    <div class="product-image">
+                        <img src="images/product.jpg" alt="Product Picture">
+                    </div>
+                    
+                </div>
+
+                <div class="product-description">
+                    <h3>
+                        Guatama-zp
+                    </h3>
+                    <p>
+                        Ksh20.00
+                    </p>
+                </div>
+                
+            </div>
+            <div class="product">
+                <div class="images">
+                    <div class="user-interaction">
+                        <img src="images/Love.svg" alt="Add to Favorites">
+                        <img src="images/add-cart.svg" alt="Add Product to Cart">
+                    </div>
+                    <div class="product-image">
+                        <img src="images/product.jpg" alt="Product Picture">
+                    </div>
+                    
+                </div>
+
+                <div class="product-description">
+                    <h3>
+                        Guatama-zp
+                    </h3>
+                    <p>
+                        Ksh20.00
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <a href="#" class="load">
+            Load more...
+        </a>
+    </section>
+
+    <section id="open-shop" class="products">
+        <h1>Shop</h1>
+        <div class="container">
+            <div class="product">
+                <div class="images">
+                    <div class="user-interaction">
+                        <img src="images/Love.svg" alt="Add to Favorites">
+                        <img src="images/add-cart.svg" alt="Add Product to Cart">
+                    </div>
+                    <div class="product-image">
+                        <img src="images/product.jpg" alt="Product Picture">
+                    </div>
+                    
+                </div>
+
+                <div class="product-description">
+                    <h3>
+                        Guatama-zp
+                    </h3>
+                    <p>
+                        Ksh20.00
+                    </p>
+                </div>
+                
+            </div>
+            <div class="product">
+                <div class="images">
+                    <div class="user-interaction">
+                        <img src="images/Love.svg" alt="Add to Favorites">
+                        <img src="images/add-cart.svg" alt="Add Product to Cart">
+                    </div>
+                    <div class="product-image">
+                        <img src="images/product.jpg" alt="Product Picture">
+                    </div>
+                    
+                </div>
+
+                <div class="product-description">
+                    <h3>
+                        Guatama-zp
+                    </h3>
+                    <p>
+                        Ksh20.00
+                    </p>
+                </div>
+                
+            </div>
+            <div class="product">
+                <div class="images">
+                    <div class="user-interaction">
+                        <img src="images/Love.svg" alt="Add to Favorites">
+                        <img src="images/add-cart.svg" alt="Add Product to Cart">
+                    </div>
+                    <div class="product-image">
+                        <img src="images/product.jpg" alt="Product Picture">
+                    </div>
+                    
+                </div>
+
+                <div class="product-description">
+                    <h3>
+                        Guatama-zp
+                    </h3>
+                    <p>
+                        Ksh20.00
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+
+        <a href="#" class="load">
+            Load more...
+        </a>
+    </section>
+
+    <section id="open-contact" class="newslatter">
+        <div class="container">
+            <h5>LATEST PRODUCTS</h5>
+            <h2>In An Instant</h2>
+            <h2>Mail Up</h2>
+            <div class="input"> 
+                <input type="text" placeholder="Enter your email...">
+            </div>
+            <div class="hero-button">
+                <a href="#">Get Mail</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="item">
+                <h5>MY ACCOUNT</h5>
+
+                <p>
+                    Register
+                    
+                </p>
+                <p>
+                    Sign in
+                    
+                </p>
+                <p>
+                    
+                    Order status 
+                </p>
+            </div>
+            <div class="item">
+                <h5>HELP</h5>
+
+                <p>
+                    Shipping
+                    
+                </p>
+                <p>
+                    Returns
+                    
+                </p>
+                <p>
+                    Sizing
+                    
+                </p>
+            </div>
+            <div class="item">
+                <h5>ABOUT</h5>
+                <p>
+                    
+                    Our story
+                </p>
+                <p>
+                    Media
+                    
+                </p>
+                <p>
+                    Sustainability
+                    
+                </p>
+            </div>
+            <div class="item">
+                <h5>LEGAL STUFF</h5>
+                <p>
+                    Terms of use
+                    
+                </p>
+                <p>
+                    Terms of sale
+                    
+                </p>
+                <p>
+                    Privacy policy
+                    
+                </p>
+            </div>
+            <div class="item">
+                <h5> FOLLOW DUKAS</h5>
+                <div class="social-icon">
+                    <img src="images/Instagram.svg" alt="linkedin">
+                    <img src="images/Twitter.svg" alt="linkedin">
+                    <img src="images/Facebook.svg" alt="linkedin">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js">
+
+    </script>
     
 </body>
 </html>
