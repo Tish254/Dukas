@@ -32,7 +32,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  margin: 0 3em;
+  margin-left: 3em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -61,7 +62,7 @@ a {
           justify-content: center;
 }
 
-.navbar .container logos {
+.navbar .container .logos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,6 +379,8 @@ a {
   background-color: white;
   width: 20.5em;
   height: 17em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .categories .container .category .category-image {
@@ -516,6 +519,8 @@ a {
   border-radius: 10px;
   width: 20em;
   height: 20em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .products .product .images {
@@ -747,6 +752,7 @@ footer .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 3em;
   }
   .navbar .container nav {
     height: auto;
@@ -780,6 +786,9 @@ footer .container {
   }
   .navbar .container nav .primary-nav li.last-child {
     display: none;
+  }
+  .navbar .container .left-nav {
+    margin-right: 5em;
   }
   .navbar .container .left-nav .login {
     display: -webkit-inline-box;
